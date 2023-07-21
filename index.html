@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>week-8</title>
+</head>
+<body class=" bg-dark">
+    <h1 class="text-white text-center">ســيف الـأمـرائـ</h1>
+    <div class="container position-relative ">
+    <input type="text"   id="YN" class=" form-control mb-4" placeholder="Your Account Name" >
+    <input type="text"   id="TE" class=" form-control mb-4" placeholder="The Event" >
+    <input type="number" id="Po" class=" form-control mb-4" placeholder="Points" >
+    <input type="number" id="RP" class=" form-control mb-4" placeholder="Required Points" >
+    <button onclick="gitDataValue()"  class=" w-50 mt-3 position-absolute btn btn-outline-secondary" >
+        Click For Display
+    </button>
+    </div>
+    <div class="forsearch pt-5 pb-3 mt-5">
+        <div class="container">
+            <input onkeyup="toSearch(this)" type="text" id="src" placeholder="Search" class="form-control " required >
+        </div>
+    </div>
+    <section class="show mt-5 pt-5">
+        <div class=" container">
+            <table class=" text-white table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Name</th>
+                        <th>Event</th>
+                        <th>Point's</th>
+                        <th>Required Point's</th>
+                        <th>Delete</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody id="tableData">
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
